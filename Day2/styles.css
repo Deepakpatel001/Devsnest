@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom right, #2196f3, #9c27b0);
+}
+div{
+    border: solid 1px black;
+}
+h3{
+    font-size: 16;
+}
+h4{
+    font-size: 12;
+    font-style: italic;
+}
+p{
+    font-size: 12;
+}
+.main{
+    height: 1000px;
+    width: 800px;
+    background-color: antiquewhite;
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px;
+}
+.top{
+    height: 300px;
+    width: 100%;
+
+}
+.div1{
+    height: 100px;
+    width: 30%;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div2{
+    height: 100px;
+    width: 70%;
+    float: left;
+    text-align: right;
+}
+.div3{
+    height: 300px;
+    width: 100%;
+    
+}
+.left, .right{
+    height: 600px;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
