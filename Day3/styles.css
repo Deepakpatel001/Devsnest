@@ -45,6 +45,7 @@ body{
     margin-left: 200px;
     position: absolute;
     transform-origin: 100% 0%;
+    transform: translateX(50%);
 
     
 }
