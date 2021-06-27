@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+
+}
+.clock{
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid black;
+    padding: 20px;
+}
+.sec{
+    height: 250px;
+    width: 5px;
+    left: 245px;
+    background-color: black;
+    z-index: 3;
+    transform: translateX(20deg)
+
+}
+.min{
+    height: 250px;
+    width: 7px;
+    left: 242.5px;
+    background-color: black;
+    z-index: 2;
+    top: -250px;
+    
+}
+.hour{
+    height: 250px;
+    width: 10px;
+    left: 240px;
+    background-color: black;
+    z-index: 1;
+    top: -430px;
+    
+}
+.sec, .min, .hour{
+    line-height: 45px;
+    position: relative;
+    transform-origin: bottom;
+}
