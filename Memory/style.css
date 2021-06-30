@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333333;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wapper {
+    display: flex;
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    margin: 20px;
+    border-radius: 3px;
+    background: #20002c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbb4d4, #20002c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all 0.5s;
+    transform-style: preserve-3d;
+}
+
+.card-back {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.div {
+    display: flex;
+}
+
+.card:hover,
+.card-back {
+    transform: rotateY(180deg);
+}
