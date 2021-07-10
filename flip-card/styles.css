@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+.card-inner {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.clicked {
+    transform: rotateY(180deg);
+}
+
+.front {
+    background-color: teal;
+}
+
+.back {
+    background-color: tomato;
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}

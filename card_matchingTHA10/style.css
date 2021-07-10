@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    font-family: "Audiowide", sans-serif;
+    overflow: hidden;
+}
+
+.myImg {
+    width: 150px;
+    height: 175px;
+    border-radius: 2px;
+}
+
+.statsCase {
+    text-align: center;
+    margin-top: 1%;
+    font-size: x-large;
+}
+
+.stats {
+    color: black;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 550px;
+    margin-top: -260px;
+    margin-left: -600px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 25px 25px;
+}
+
+.cardCase {
+    width: 150px;
+    height: 175px;
+    position: relative;
+    perspective: 1000px;
+    border-radius: 4px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 6px;
+    box-shadow: -3px 5px 5px 0px rgba(126, 59, 59, 0.822);
+}
+
+.card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
