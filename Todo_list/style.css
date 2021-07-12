@@ -13,6 +13,8 @@ body {
     background: linear-gradient(to bottom, #2a0845, #6441A5);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100vh;
+    cursor: auto;
+    cursor: url(./cursor/SR-normal.cur) 4 12, auto;
 }
 
 header {
@@ -48,6 +50,8 @@ form button {
 }
 
 form input {
+    cursor: text;
+    cursor: url(./cursor/SR-text.cur) 4 12, text;
     min-width: 30%;
     box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
@@ -61,6 +65,7 @@ form button {
     color: orange;
     background: white;
     cursor: pointer;
+    cursor: url(./cursor/SR-precision.cur) 4 12, pointer;
     transition: all 0.5 ease;
     box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
@@ -109,7 +114,8 @@ form button:hover {
 
 .todo li {
     flex: 1;
-    cursor: default;
+    cursor: auto;
+    cursor: url(./cursor/SR-normal.cur) 4 12, auto;
 }
 
 .complete-btn,
@@ -120,6 +126,7 @@ form button:hover {
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    cursor: url(./cursor/SR-precision.cur) 4 12, pointer;
 }
 
 .trash-btn {
