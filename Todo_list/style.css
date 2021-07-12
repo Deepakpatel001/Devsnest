@@ -44,6 +44,7 @@ form button {
     border: none;
     background-color: white;
     outline: none;
+    transition: 0.5s;
 }
 
 form input {
@@ -54,7 +55,6 @@ form input {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 3px;
 }
 
 form button {
@@ -88,7 +88,7 @@ form button:hover {
 .todo {
     margin: 0.5rem;
     background: white;
-    color: orange;
+    color: rgb(54, 54, 54);
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
