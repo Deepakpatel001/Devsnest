@@ -2,17 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Zen Loop', cursive;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 body {
-    background-image: linear-gradient(120deg, yellow, orange);
+    background: #6441A5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2a0845, #6441A5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2a0845, #6441A5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100vh;
 }
 
 header {
     font-size: 2rem;
     color: white;
+}
+
+#title {
+    transition: 0.5s;
+}
+
+#title:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 
 header,
@@ -34,6 +48,13 @@ form button {
 
 form input {
     min-width: 30%;
+    box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 3px;
 }
 
 form button {
@@ -41,6 +62,11 @@ form button {
     background: white;
     cursor: pointer;
     transition: all 0.5 ease;
+    box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 3px;
 }
 
 form button:hover {
@@ -68,6 +94,13 @@ form button:hover {
     justify-content: space-between;
     align-items: center;
     transition: 0.5s ease;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 20px;
+    box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 32px 27px -10px rgba(0, 0, 0, 0.75);
 }
 
 .todo:hover {
@@ -87,6 +120,10 @@ form button:hover {
     border: none;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.trash-btn {
+    border-top-right-radius: 20px;
 }
 
 .complete-btn {
@@ -115,6 +152,6 @@ form button:hover {
 }
 
 .fall {
-    transform: translatex(8rem) rotatex(20deg);
+    transform: scale(1.1);
     opacity: 0;
 }
