@@ -17,4 +17,5 @@
 p {
     font-size: xx-large;
     padding: 5rem;
+    user-select: all;
 }
