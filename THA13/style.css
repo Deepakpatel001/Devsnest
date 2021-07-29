@@ -7,7 +7,7 @@
 }
 
 .wapper {
-    display: flex;
+    display: grid;
     place-items: center;
     width: 100vw;
     min-height: 100vh;
@@ -20,7 +20,8 @@
     /* user-select: all; */
 }
 
-#author {
+
+/* #author {
     font-size: xx-large;
     text-align: right;
-}
+} */

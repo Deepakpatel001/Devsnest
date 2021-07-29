@@ -5,5 +5,5 @@ fetch("https://api.quotable.io/random")
     .then(res => res.json())
     .then(data => {
         para.innerText = data.content;
-        author.innerText = data.author;
+        // author.innerText = data.author;
     })
